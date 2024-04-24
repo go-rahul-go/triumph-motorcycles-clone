@@ -1,0 +1,33 @@
+.coming-soon {
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid rgb(212, 0, 255); */
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background-image: url("../assets/coming-soon.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+ 
+}
+.coming-soon>p{
+    font-size:9vw;
+    color:white;
+    text-transform: uppercase;
+}
+@media (max-width:800px)
+{
+    .coming-soon{
+        width:100%;
+        height:60vw
+    }
+}
+@media (min-width:800px) and (max-width:1200px)
+{
+    .coming-soon{
+        width:100%;
+        height:60vw;
+    }
+}

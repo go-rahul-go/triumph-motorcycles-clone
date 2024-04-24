@@ -1,0 +1,592 @@
+.owner-page {
+    width: 100%;
+    height: 100%;
+    padding-top: 18vh;
+    /* border:2px solid red; */
+   overflow: hidden;
+}
+
+.total-care{
+    width:100%;
+    height:100%;
+    
+}
+.total-care-video{
+    width:100%;
+    height:90vh;
+    overflow: hidden;
+}
+.total-care-video>video{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.total-care-hide{
+    display: none;
+}
+.your-triumph{
+    width:100%;
+    height:100%;
+   
+}
+.your-triumph-hide{
+    display: none;
+}
+.total-care-intro{
+    width:100%;
+    height:100%;
+    /* border:2px solid orange; */
+    padding:20px 0px;
+}
+#tci-h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+#tci-p{
+    /* border:1px solid red; */
+    width:100%;
+    display: grid;
+    place-items: center;
+    padding:40px 0px;
+}
+#tci-p p{
+    width:45%;
+}
+#online-service{
+    width:100%;
+    height:100%;
+    /* border:1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    padding:40px 0px;
+    
+}
+#os-pic{
+    width:50%;
+    height:100vh;
+    /* border:1px solid red; */
+}
+#os-pic img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+#os-txt{
+    width:30%;
+    height:50%;
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+#os-txt p{
+    color:grey;
+}
+.tc-dealer{
+    width:70%;
+    padding:10px 0px;
+    background:rgb(184, 1, 1);
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+}
+#total-care-youtube-video{
+    width:85%;
+    height:80vh;
+    margin:40px auto;
+    /* border:1px solid red; */
+}
+#total-care-youtube-video video{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+#total-care-products-services{
+    width: 100%;
+    height:100%;
+    /* border:2px solid red; */
+}
+#tcps-head{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin:auto;
+   /* border:1px solid rgb(104, 0, 223); */
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 50px;
+    
+}
+#tcps-head::before{
+    content:"";
+    position: absolute;
+    width:calc(100vw - 30%);
+    height:3px;
+    background:linear-gradient(45deg,rgb(212, 1, 1),rgb(204, 1, 1),transparent);
+    top:50%;
+    left:0%;
+    transform: translateX(-100%);
+    
+}
+#tcps-head::after{
+    content:"";
+    position: absolute;
+    width:calc(100vw - 30%);
+    height:3px;
+    background:linear-gradient(45deg,transparent,rgb(212, 1, 1),rgb(204, 1, 1));
+    top:50%;
+    right:0%;
+    transform: translateX(100%);
+    
+}
+#tcps-head>h3{
+    font-size: 3.2rem;
+    
+}
+#tcps-head>p{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.tc-service{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.tc-service-reverse{
+    flex-direction: row-reverse;
+}
+.tcps-video-box{
+    width:60%;
+    height:75vh;
+    /* border:2px solid red; */
+}
+.tcps-video-box>video,.tcps-video-box>img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.tcps-text-box{
+    width:25%;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    /* border:1px solid green; */
+    font-size: 0.95rem;
+}
+.tcps-text-box>h3{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.tcps-text-box>p{
+    color:rgb(78, 78, 78);
+}
+.tc-dealer-black{
+    background:#000;
+}
+.tcps-text-box>ul{
+    list-style-type:disc;
+    list-style-position: inside;
+    color:rgb(208, 0, 0);
+    
+
+}
+.tcps-text-box ul li{
+    color:rgb(78, 78, 78);
+}
+
+#dealer-near-you{
+    width:100%;
+    height:100vh;
+    background-image: url("../assets/owner-page/find-a-dealer-bg.avif");
+    background-position: center;
+    background-size: cover;
+    margin:50px 0px 0px 0px;
+    /* border:2px solid blue; */
+    display: grid;
+    place-items: center;
+}
+#dealer-box{
+    width:70%;
+    /* height:75%; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding:20px 0px;
+}
+#dealer-box>h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+#dealer-box>input{
+    width:80%;
+    height:3rem;
+
+}
+#dealer-box>select{
+    text-transform: capitalize;
+    width:20%;
+    height:2rem;
+}
+#dealer-search-btn{
+    width:40%;
+    padding:20px;
+    background: rgb(242, 240, 240);
+    font-size:0.9rem;
+    text-transform: uppercase;
+    border:none;
+    color:grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+#dealer-search-btn:last-child{
+    background:#000;
+    color:#fff;
+}
+.foot-dealer-locator{
+    width: 100%;
+    height:15vh;
+    background:rgb(57, 57, 57);
+    display:flex;
+    justify-content: center;
+    place-items: center;
+    color:rgb(255, 255, 255);
+    font-size: 4vw;
+    gap:5px;
+}
+.foot-dealer-locator>span{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color:grey
+}
+#your-triumph-hero{
+    width:100%;
+    height:100vh;
+    background-image: url("../assets/owner-page/13495-yourtriumph-hero-768x768.avif");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items:center;
+    margin-bottom: 50px;
+}
+#yt-hero-h3{
+    color:white;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#oil-tyre{
+    width:100%;
+    padding:40px 0px;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#oil-tyre h3{
+    text-transform: uppercase;
+}
+.oil-tyre-box{
+    width:30%;
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.oil-tyre-pic{
+    width:100%;
+    height:60vh;
+    overflow: hidden;
+    background: #000;
+}
+.oil-tyre-pic img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition: all 300ms linear;
+    position: relative;
+    z-index:3;
+}
+.oil-tyre-pic img:hover{
+  transform: scale(1.2);
+}
+#oil-pic{
+    object-fit: contain;
+}
+.oil-tyre-txt{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.oil-tyre-txt span{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.yt-box{
+    width:100%;
+    display: flex;
+    margin:50px 0px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.yt-box-reverse{
+    flex-direction: row-reverse;
+}
+.yt-pic{
+    width:50%;
+    height:100vh;
+    /* border:1px solid blue; */
+}
+.yt-pic img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.yt-txt{
+    width:30%;
+}
+.yt-box h3{
+    text-transform: uppercase;
+}
+.terms-cond{
+    font-size: 0.87rem;
+    color:rgb(188, 186, 186);
+}
+@media (max-width:800px) {
+    .owner-page-hide {
+        display: none;
+    }
+    .owner-page{
+        padding-top: calc(8vh + 50px);
+    }
+    .total-care-video{
+        height:60vw;
+    }
+    #total-care-youtube-video{
+        width:95%;
+        height:60vw;
+       
+    }
+    #tcps-head{
+        width:60%;
+    }
+    #tcps-head>h3{
+        font-size:2rem;
+    }
+    #tcps-head>p{
+        font-size: 1.1rem;
+    }
+    .tc-service,.tc-service-reverse{
+        flex-direction: column;
+        gap:20px;
+    }
+    .tcps-video-box{
+        width:96%;
+        height:50vw;
+    }
+    .tcps-text-box{
+        width:90%;
+        justify-content: center;
+        align-items: center;
+    }
+    #dealer-near-you{
+        width: 100%;
+        height:100%;
+        padding:10px 0px;
+    }
+    #dealer-box{
+        width:90%;
+        /* height:70%; */
+        background-color: white;
+        gap:10px;
+    }
+    #dealer-box>h3{
+        font-size:4vw;
+    }
+    #dealer-box>p{
+        font-size: 2.5vw;
+    }
+    #dealer-box>select{
+        height:1.5rem;
+    }
+    #dealer-box>input{
+        width:70%;
+        height:1.4rem;
+    }
+    #dealer-search-btn{
+        width:80%;
+        height:1.4rem;
+    }
+    .foot-dealer-locator{
+        height:9vh;
+        font-size: 2.3rem;
+    }
+    .foot-dealer-locator>span{
+        font-size: 1.1rem;
+    }
+    #online-service{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #os-txt{
+        width:90%;
+    }
+    #os-pic{
+        width:90%;
+        height:60vw;
+    }
+    #os-pic img{
+        object-position: top;
+    }
+    #oil-tyre{
+        flex-direction: column;
+        gap:20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .oil-tyre-box
+    {
+        width:90%;
+    }
+    .oil-tyre-pic{
+        width:100%;
+        height:50vw;
+    }
+    .yt-box,.yt-box-reverse{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    .yt-pic{
+        width:95%;
+        height:55vw;
+    }
+    /* .your-triumph{
+        padding-top: 16vh;
+    } */
+    #your-triumph-hero{
+        width:100%;
+        height:70vw;
+    }
+    #tci-p p{
+        width:90%;
+        /* border:1px solid red; */
+    }
+}
+
+@media (min-width:800px) and (max-width:1200px) {
+    .owner-page-hide {
+        display: none;
+    }
+    .owner-page{
+        padding-top: calc(8vh + 50px);
+    }
+    .total-care-video{
+        height:65vw;
+    }
+    #total-care-youtube-video{
+        width:95%;
+        height:60vw;
+       
+    }
+    #tcps-head{
+        width:40%;
+    }
+    #tcps-head>h3{
+        font-size: 2rem;
+    }
+    .tc-service,.tc-service-reverse{
+        flex-direction: column;
+        gap:10px;
+    }
+    .tcps-video-box{
+        width:95%;
+        height:60vw;
+    }
+    .tcps-text-box{
+        width:75%;
+        justify-content: center;
+        align-items: center;
+    }
+    #dealer-near-you{
+        width: 100%;
+        height:75vw;
+    }
+    #dealer-box{
+        width:90%;
+        /* height:70%; */
+        background-color: white;
+    }
+    #dealer-box>h3{
+        font-size: 2rem;
+    }
+    .foot-dealer-locator{
+        height:10vh;
+        font-size: 2.8rem;
+    }
+    .foot-dealer-locator>span{
+        font-size: 1.3rem;
+    }
+    #online-service{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #os-txt{
+        width:90%;
+    }
+    #os-pic{
+        width:90%;
+        height:60vw;
+    }
+    #os-pic img{
+        object-position: top;
+    }
+    #your-triumph-hero{
+        width:100%;
+        height:70vw;
+    }
+    #oil-tyre{
+        flex-direction: column;
+        gap:20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .oil-tyre-box
+    {
+        width:90%;
+    }
+    .oil-tyre-pic{
+        width:100%;
+        height:50vw;
+    }
+    .yt-box,.yt-box-reverse{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    .yt-pic{
+        width:95%;
+        height:55vw;
+    }
+    #tci-p p{
+        width:90%;
+        /* border:1px solid red; */
+    }
+}

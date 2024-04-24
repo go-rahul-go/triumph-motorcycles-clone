@@ -1,0 +1,130 @@
+.keep-in-touch {
+    width: 100%;
+
+    background: rgb(254, 254, 254);
+    padding: 50px 0px;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+}
+
+#keep-in-touch-box {
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#keep-in-touch-box>h2 {
+    text-transform: uppercase;
+}
+
+#keep-in-touch-box>p {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#keep-in-touch-form {
+    width: 40%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px;
+    position: relative;
+}
+
+#keep-in-touch-form label {
+    text-transform: capitalize;
+}
+
+#keep-in-touch-form input {
+    padding: 10px;
+    font-size: 1rem;
+}
+.notice{
+    position: absolute;
+    right:10px;
+    top:15px;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    font-weight:500;
+}
+.n-black{
+    color:black;
+}
+.n-green{
+    color:rgb(0, 168, 0);
+}
+.n-red{
+    color:rgb(220, 4, 4);
+}
+#keep-in-touch-form input:focus {
+    outline: 2px solid rgb(196, 2, 2);
+}
+
+.informed-btn {
+    width: 20%;
+    padding: 10px;
+    border: none;
+
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.inactive-informed-btn {
+    color: #001;
+    background: rgb(237, 236, 236);
+}
+
+.inactive-informed-btn:hover {
+    cursor: not-allowed;
+}
+
+.active-informed-btn {
+    color: rgb(255, 255, 255);
+    background: rgb(204, 1, 1);
+}
+
+.active-informed-btn:hover {
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    #keep-in-touch-box {
+        width:95%;
+        gap: 10px;
+    }
+    #keep-in-touch-box>p{
+        font-size:3.6vw;
+    }
+    #keep-in-touch-form {
+        width: 90%;
+    }
+
+    .informed-btn {
+        width: 50%;
+    }
+}
+
+@media (min-width:800px) and (max-width:1200px) {
+    #keep-in-touch-box {
+        width:95%;
+        gap: 20px;
+    }
+    #keep-in-touch-box>h2{
+        font-size: 2.4rem;
+    }
+    #keep-in-touch-box>p{
+        font-size:1.2rem;
+    }
+    #keep-in-touch-form {
+        width: 80%;
+    }
+
+    .informed-btn {
+        width: 50%;
+    }
+}

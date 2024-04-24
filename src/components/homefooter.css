@@ -1,0 +1,242 @@
+.home-footer{
+    width:100%;
+    /* height:100%; */
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+    
+}
+.home-footer-hide{
+    display: none;
+}
+
+.pc-home-footer{
+    width:96%;
+    /* height:100%; */
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+.pc-footer-links{
+    width:100%;
+    height:80vh;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    /* padding:0px 20px; */
+}
+.pc-social-media-links{
+    width: 100%;height:10vh;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:20px;
+    /* padding:0px 20px; */
+    border-bottom: 2px solid black;
+}
+.pc-social-media-links>div{
+    width: 20px;
+    height:20px;
+    overflow: hidden;
+}
+.pc-social-media-links>div img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.pc-footer-card{
+    width:20%;
+    height:80%;
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start;
+   gap:20px;
+   padding-left:20px;
+   text-transform: uppercase;
+}
+.pc-footer-title{
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+.pc-footer-link{
+    text-decoration: none;
+    color:rgb(94, 93, 93);
+    font-weight: 700;
+}
+.pc-footer-link:hover{
+    color:rgb(181, 2, 2);
+}
+.pc-footer-base{
+    width:100%;
+    height:30vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+#legal-terms{
+    width:50%;
+    height:50px;
+    display: flex;
+    gap:10px;
+    padding:20px 0px;
+    /* border: 1px solid black; */
+}
+.legal-links{
+    text-decoration: none;
+    color:rgb(69, 69, 69);
+    text-transform: capitalize;
+    
+}
+.legal-links:hover{
+    color:rgb(175, 2, 2);
+}
+#copyright
+{
+    /* border: 1px solid black; */
+    width:40%;
+    height:50px;
+    padding:20px 0px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:5px;
+}
+.mob-footer-links{
+    display: none;
+}
+@media (max-width:1200px)
+{
+    .pc-footer-links{
+        display: none;
+    }
+    .pc-footer-base{
+        /* height:20vh; */
+        height:100%;
+        flex-direction: column;
+    }
+    #legal-terms{
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    #copyright{
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .mob-footer-links{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        /* min-height:50vh; */
+        /* border:2px solid green; */
+    }
+    .mob-foot-link{
+        width:100%;
+        /* height:40px; */
+        border-bottom:1px solid rgb(214, 214, 214);
+        padding:10px;
+        text-transform: uppercase;
+        font-weight: 900;
+        position: relative;
+    }
+    .mob-foot-accordion{
+        width:100%;
+       
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+       gap:10px;
+       padding:10px 10px;
+        overflow: hidden;
+    }
+    .mob-foot-accordion>a{
+        text-decoration: none;
+        color:black;
+        text-transform: capitalize;
+        font-weight: 200;
+    }
+    .mob-foot-accordion-hide{
+       
+        display: none;
+       
+    }
+    #f1{animation: expand1 300ms linear  1 forwards;}
+    #f2{animation: expand2 300ms linear  1 forwards;}
+    #f3{animation: expand3 300ms linear  1 forwards;}
+    #f4{animation: expand4 300ms linear  1 forwards;}
+    @keyframes expand1 {
+        from
+        {
+            height: 0px;
+            opacity: 0;
+        }
+        to
+        {opacity: 1;
+            height:220px;
+        }
+    }
+
+    @keyframes expand2 {
+        from{
+            height: 0px;
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+            height:150px;
+        }
+        
+    }
+    @keyframes expand2 {
+        from{
+            height: 0px;
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+            height:150px;
+        }
+        
+    }
+    @keyframes expand3 {
+        from{
+            height: 0px;
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+            height:80px;
+        }
+        
+    }
+    @keyframes expand4 {
+        from{
+            height: 0px;
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+            height:120px;
+        }
+        
+    }
+    .foot-arrow{
+        position: absolute;
+        right:10px;
+        top:10px;
+        font-size: 1.5rem;
+        transition: all 350ms linear;
+    }
+    .foot-arrow-up{
+        transition: all 350ms linear;
+        transform: rotate(-180deg);
+    }
+    
+}

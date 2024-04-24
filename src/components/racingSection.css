@@ -1,0 +1,925 @@
+.racing-section {
+    width: 100%;
+    /* padding: 20px 0px 10px 0px; */
+    /* border: 2px solid green; */
+}
+
+.racing-section-hero {
+    width: 100%;
+    height: 100vh;
+    /* border:2px solid rgb(0, 157, 255); */
+    /* margin:20px 0px; */
+    background-image: url("../assets/discover-page/racingHero.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    place-items: center;
+
+}
+
+.racing-inner-hero {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.368);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: ghostwhite;
+
+}
+
+.racing-inner-hero>h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.racing-inner-hero>h1::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: yellow;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: translateX(50%);
+    border-radius: 10px;
+}
+
+.racing-inner-hero>h3:first-child {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.racing-inner-hero>h3:first-child::after {
+    content: "";
+    width: 70%;
+    height: 2px;
+    background: yellow;
+    position: absolute;
+    bottom: -25%;
+    left: 0%;
+    transform: translateX(20%);
+    border-radius: 10px;
+}
+
+.racing-inner-hero>h3 {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.race-topics {
+    width: 100%;
+
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    row-gap: 50px;
+    padding: 50px 0px;
+}
+
+.race-topic-card {
+    width: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 0px 0px 2px grey; */
+}
+
+.race-topic-pic {
+    width: 100%;
+    height: 70vh;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.race-topic-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.race-topic-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background: #fff;
+    text-transform: uppercase;
+    gap: 10px;
+}
+
+.race-topic-txt>p {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: rgb(77, 76, 76);
+}
+
+.race-topic-txt>h3 {
+    font-size: 1.9rem;
+}
+
+.racing-slider {
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px 0px; */
+    position: relative;
+    margin: 50px 0px;
+}
+
+.racing-card {
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid red; */
+
+
+}
+
+.inner-racing-card {
+    width: 90%;
+    height:100%;
+    background-color: rgb(206, 206, 205);
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px rgb(148, 148, 148);
+}
+
+.film {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.491);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.inner-racing-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.rc-title {
+    position: relative;
+    z-index: 3;
+    color: white;
+    text-transform: uppercase;
+}
+
+.rc-title:hover {
+    cursor: pointer;
+}
+
+.inner-racing-card:hover .film {
+
+    background-color: transparent;
+}
+
+.race-arrow {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    border-radius: 50%;
+    place-items: center;
+    background-color: rgba(182, 1, 1, 0.807);
+    color: white;
+    position: absolute;
+    z-index: 4;
+
+}
+
+.race-arrow:hover {
+    cursor: pointer;
+}
+
+.prev-race-arrow {
+    right: 10px;
+}
+
+.next-race-arrow {
+    left: 10px;
+}
+
+.race-pop-up {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #F3F3F3;
+    z-index: 6;
+}
+
+.race-close-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: rgb(174, 0, 0);
+    color: ghostwhite;
+    font-size: 2rem;
+    transition: all 200ms ease-in;
+    z-index: 4;
+}
+
+.race-close-btn:hover {
+    background-color: rgb(255, 20, 20);
+    color: rgb(249, 246, 246);
+    cursor: pointer;
+}
+
+.race-scroll {
+    position: absolute;
+    font-size: 1.3rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    background-color: transparent;
+    color: rgb(170, 1, 1);
+    font-weight: 500;
+    bottom: 5px;
+    z-index: 4;
+
+    overflow: hidden;
+
+}
+
+.race-scroll:hover {
+    cursor: pointer;
+}
+
+.race-next-slide {
+
+
+    right: 10px;
+
+}
+
+.race-prev-slide {
+    left: 20px;
+    flex-direction: row-reverse;
+}
+
+.race-pop-h1 {
+    /* text-align: center; */
+    font-size: 2rem;
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+
+.race-pop-box {
+    width: 100%;
+    /* height:70vh; */
+    margin: auto;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.race-pop-pic {
+    width: 50%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.race-pop-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.race-pop-txt {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: papayawhip; */
+    gap: 10px;
+
+}
+
+.pop-up-h3 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+.moto-pop-up-txt {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.race-pop-txt p {
+    margin-bottom: 10px;
+}
+
+.race-pop-discover {
+    background: rgb(186, 1, 1);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.rpd-black {
+    background: #000;
+}
+
+.race-pop-carousel {
+    width: 100%;
+    /* height:80vh; */
+    /* border: 2px solid green; */
+    position: relative;
+    display: grid;
+    place-items: center;
+    /* padding:20px 0px; */
+}
+
+.race-pop-arrow {
+    position: absolute;
+    z-index: 3;
+    background-color: rgb(158, 1, 1);
+    color: ghostwhite;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.race-pop-arrow:hover {
+    cursor: pointer;
+}
+
+.rpa-l {
+    right: 15px;
+
+}
+
+.rpa-r {
+    left: 10px;
+}
+
+.rpa-hide {
+    display: none;
+}
+
+.race-pop-card {
+    width: 100%;
+    height: 90vh;
+    /* border: 2px solid pink; */
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pop-right {
+    animation: appear-from-right 400ms linear forwards;
+}
+
+.pop-left {
+    animation: appear-from-left 400ms linear forwards;
+}
+
+.dash:hover {
+    cursor: pointer;
+}
+
+#isle-of-man-pic {
+    object-fit: cover;
+    object-position: top;
+}
+
+@keyframes appear-from-right {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes appear-from-left {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.race-pop-card-hide {
+    display: none;
+}
+
+.race-dots {
+    width: 100%;
+    /* position: absolute;
+    bottom:0; */
+    height: 20px;
+    /* border:1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    z-index: 3;
+}
+
+.red-dark {
+    color: rgb(208, 2, 2);
+}
+
+.red-light {
+    color: rgb(255, 193, 193)
+}
+
+.race-carousel-image {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    /* border: 1px solid yellow; */
+}
+
+.race-carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.race-carousel-txt {
+    width: 30%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 50px 0px 0px 0px;
+    position: relative;
+}
+
+.race-carousel-txt h3 {
+    text-transform: uppercase;
+}
+
+.very-small {
+    font-size: 0.75rem;
+    color: rgb(163, 162, 162);
+    text-transform: capitalize;
+    /* position: absolute;
+    bottom:10px;
+    left:20px; */
+}
+
+#race-winning {
+    text-align: center;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.other-news-headline {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 20px 0px;
+    /* border:1px solid red; */
+    text-transform: uppercase;
+}
+
+.other-race-news {
+    width: 100%;
+    padding: 50px 0px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.other-race-news-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 15px rgb(171, 170, 170);
+}
+
+.other-race-news-card:hover {
+    cursor: pointer;
+}
+
+.other-race-news-card:hover .orn-pic img {
+    transform: scale(1.2);
+}
+
+.other-race-news-card:hover .orn-txt {
+    color: rgb(189, 3, 3);
+}
+
+.orn-pic {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.orn-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 200ms linear;
+}
+
+.orn-txt {
+    width: 100%;
+    max-height: 25vh;
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: 50px 10px;
+    position: relative;
+}
+
+.orn-txt>h3 {
+    font-size: 1.5rem;
+}
+
+.orn-category,
+.orn-date {
+    position: absolute;
+}
+
+.orn-category {
+    top: 10px;
+    left: 10px;
+}
+
+.orn-date {
+    right: 10px;
+    top: 10px;
+}
+
+@media (max-width:800px) {
+    .racing-slider {
+        padding: 0px;
+        height: 100%;
+        /* background:papayawhip; */
+    }
+
+    .racing-card {
+        width: 100%;
+        height: 55vh;
+        /* border: 2px solid green; */
+
+    }
+
+    .race-pop-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 0px 0px;
+        gap: 20px;
+    }
+
+    .race-pop-h1 {
+        font-size: 5vw;
+
+        color: rgb(52, 52, 53);
+    }
+
+    .race-scroll {
+        font-size: 1rem;
+    }
+
+    .race-pop-pic {
+        width: 95%;
+        height: 67vw;
+    }
+
+    .race-pop-txt {
+        width: 95%;
+        font-size: 3.6vw;
+    }
+
+    .race-close-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
+
+    }
+
+    .race-prev-slide,
+    .race-next-slide {
+        bottom: 5px;
+    }
+
+    .race-arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .race-pop-card {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .race-carousel-image {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .race-carousel-image img {
+
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .race-carousel-txt {
+        width: 100%;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 20px 0px 20px 10px;
+    }
+
+    .moto-pop-up-txt {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .racing-section-hero {
+        width: 100%;
+        height: 70vw;
+    }
+
+    #race-winning {
+        font-size: 3.6vw;
+    }
+
+    .racing-inner-hero>h1 {
+        font-size: 9vw;
+        text-transform: uppercase;
+    }
+
+    .racing-inner-hero>h3:first-child {
+        font-size: 4vw;
+    }
+
+    .racing-inner-hero>h3 {
+        font-size: 3.3vw;
+    }
+
+    .race-topics {
+        width: 100%;
+
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        row-gap: 50px;
+        padding: 50px 0px;
+    }
+
+    .race-topic-card {
+        width: 95%;
+    }
+
+    .race-topic-pic {
+        width: 100%;
+        height: 70vw;
+        /* border: 1px solid red; */
+        overflow: hidden;
+    }
+
+    .race-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .other-race-news {
+        width: 100%;
+        padding: 50px 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .other-race-news-card {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .orn-pic {
+        width: 100%;
+        height: 60vw;
+        overflow: hidden;
+    }
+}
+
+@media (min-width:800px) and (max-width:1200px) {
+    .racing-slider {
+        padding: 0;
+        height: 60vh;
+        /* border: 2px solid red; */
+    }
+
+    .racing-card {
+        width: 100%;
+        height: 50vh;
+        /* border: 2px solid green; */
+
+    }
+
+    .race-pop-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 0px 0px;
+        gap: 20px;
+    }
+
+    .race-pop-h1 {
+        font-size: 5vw;
+
+        color: rgb(52, 52, 53);
+    }
+
+    .race-scroll {
+        font-size: 1.3rem;
+    }
+
+    .race-pop-pic {
+        width: 95%;
+        height: 65vw;
+    }
+
+    .race-pop-txt {
+        width: 95%;
+        font-size: 1.1rem;
+    }
+
+    .race-pop-txt p {
+        margin-bottom: 20px;
+    }
+
+    .race-close-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.6rem;
+        background-color: rgb(219, 2, 2);
+        color: ghostwhite;
+        top: 20px;
+    }
+
+    .race-prev-slide,
+    .race-next-slide {
+        bottom: 5px;
+    }
+
+    .race-pop-card {
+        flex-direction: column;
+
+    }
+
+    .race-carousel-image {
+        width: 100%;
+        height: 55vh;
+    }
+
+    .race-carousel-image img {
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .race-carousel-txt {
+        width: 100%;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 20px 0px 20px 10px;
+    }
+
+    .racing-section-hero {
+        width: 100%;
+        height: 60vw;
+    }
+
+    #race-winning {
+        font-size: 2.4rem;
+    }
+
+    .racing-inner-hero>h1 {
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+
+    .racing-inner-hero>h3:first-child {
+        font-size: 1.8rem;
+    }
+
+    .racing-inner-hero>h3 {
+        font-size: 1.2rem;
+    }
+
+    .race-topics {
+        width: 100%;
+
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        row-gap: 50px;
+        padding: 50px 0px;
+    }
+
+    .race-topic-card {
+        width: 95%;
+    }
+
+    .race-topic-pic {
+        width: 100%;
+        height: 65vw;
+        /* border: 1px solid red; */
+        overflow: hidden;
+    }
+
+    .other-race-news {
+        width: 100%;
+        padding: 50px 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .other-race-news-card {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .orn-pic {
+        width: 100%;
+        height: 55vw;
+        overflow: hidden;
+    }
+
+    .race-arrow {
+        width: 40px;
+        height: 40px;
+    }
+}

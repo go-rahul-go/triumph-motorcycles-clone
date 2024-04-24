@@ -1,0 +1,954 @@
+:root {
+    --triumphRed: rgb(175, 0, 0);
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Roboto', sans-serif; */
+    position: fixed;
+    z-index: 5;
+}
+
+.header-logo {
+    width: 15%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+
+}
+
+.pc-header-links {
+    width: 40vw;
+    height: 90%;
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.85em;
+}
+
+.pc-links {
+    text-decoration: none;
+    color: white;
+    display: block;
+
+    height: 10vh;
+    display: grid;
+    place-items: center;
+
+}
+
+.pc-links:hover {
+    color: rgb(227, 225, 225);
+}
+
+.pc-booking-links {
+    width: 30vw;
+    height: 90%;
+    /* border:2px solid red; */
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    gap: 5%;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.booking-link {
+    text-decoration: none;
+    color: ghostwhite;
+    font-weight: 100;
+    font-size: .79em;
+}
+
+.moto-links {
+    display: none;
+    animation: disappear 500ms linear;
+    z-index: 5;
+}
+
+#pc-moto:hover .moto-links {
+    display: block;
+
+    width: 100vw;
+    height: 90vh;
+    border: 2px solid black;
+    position: absolute;
+    top: 10vh;
+    left: 0vh;
+    background-color: rgb(221, 221, 221);
+    animation: appear 200ms ease-in;
+    padding: 10px 0px;
+}
+
+@keyframes appear {
+
+    from {
+        height: 0vh;
+        opacity: 0;
+    }
+
+    to {
+        height: 90vh;
+        opacity: 1;
+    }
+}
+
+.menu-hide {
+    display: none;
+}
+
+.menu-btn-div>button{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+.menu-btn-div>button:hover{
+    cursor: pointer;
+}
+.moto-links-selection-btn {
+    border: none;
+    width: 15%;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    z-index: 3;
+    text-transform: uppercase;
+}
+
+/* .moto-links-selection-btn:hover {
+    cursor: pointer;
+} */
+
+.btn-inactive {
+    border: none;
+    width: 15%;
+    height: 50px;
+    background-color: transparent;
+}
+
+.moto-menu {
+    width: 100%;
+    height: 90%;
+    /* border:2px solid black; */
+    /* margin-left:10px; */
+    background-color: #f8f8ff;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.finance-menu {
+    width: 100%;
+    height: 85%;
+    /* border:2px solid black; */
+    /* margin-left:10px; */
+    background-color: #f8f8ff;
+    color: black;
+}
+
+.moto-menu-inner-menu {
+    width: 20%;
+    height: 90%;
+    /* border: 1px solid black; */
+}
+
+.moto-menu-inner-menu>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 1px solid black; */
+    height: 50%;
+    list-style-type: none;
+    padding-left: 20px;
+
+}
+
+.moto-menu-inner-menu>ul li {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.moto-menu-inner-menu>ul li:hover {
+    color: rgb(174, 1, 1);
+}
+
+.inner-link-active {
+    color: rgb(174, 1, 1);
+}
+
+.main-menu-hide {
+    display: none;
+}
+
+.adv-menu,
+.modern-classic-menu,
+.roadster-menu,
+.chrome-menu,
+.rocket-3-menu,
+.sport-menu {
+    width: 30%;
+    height: 90%;
+    /* border: 2px solid red; */
+    overflow-y: scroll;
+}
+
+.adv-menu ul,
+.modern-classic-menu ul {
+    width: 100%;
+    /* background-color: papayawhip; */
+}
+
+.bike-menu-card {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgb(181, 181, 181);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.bike-menu-card:last-child {
+    border-bottom: none;
+}
+
+.bike-card-box {
+    /* background-color: yellow; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* gap:2%; */
+}
+
+.bike-card-box .bike-title {
+    width: 100%;
+    height: 100%;
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.new-bar {
+    width: 20px;
+    height: 100%;
+    /* transform: rotate(90deg); */
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    left: 0px;
+}
+
+.new-bar>p {
+    transform: rotate(90deg);
+    padding-top: 7px;
+}
+
+.bike-menu-card img {
+    width: 40%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bike-hide {
+    display: none;
+}
+
+.tiger-1200-gt,
+.tiger-900,
+.tiger-660,
+.tiger-850,
+.tiger-1200-rally,
+.speed-400,
+.scram-400,
+.scram-900,
+.scram-1200,
+.speed-900,
+.bobber,
+.bon-t100,
+.trident,
+.street-triple,
+.street-triple-rs,
+.rocket-3,
+.daytona-660 {
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+
+.main-bike-details {
+    width: 100%;
+    height: 70%;
+    /* border: 1px solid black; */
+    /* background-color: palegoldenrod; */
+    display: flex;
+    flex-direction: row;
+}
+
+.main-bike-specs {
+    width: 40%;
+    height: 90%;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.power-figures {
+    width: 80%;
+    height: 60%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.main-bike-image {
+    width: 60%;
+    height: 90%;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+.main-bike-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main-bike-h2 {
+    font-size: 3em;
+    font-weight: 600;
+    color: grey;
+    padding-left: 10%;
+}
+
+.menu-link {
+    width: 50%;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+
+.custom-link {
+    width: 50%;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(194, 2, 2);
+    display: grid;
+    place-items: center;
+}
+
+.acc-container {
+    display: none;
+}
+
+#pc-acc:hover .acc-container {
+    display: block;
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(253, 252, 252);
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    animation: appear 200ms ease-in;
+    z-index: 5;
+}
+
+.acc-list {
+    width: 25%;
+    height: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.acc-list h3 {
+    color: black;
+    border-bottom: 1px solid rgb(170, 170, 170);
+    font-size: 1.2rem;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+.acc-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.acc-list a:hover {
+    color: var(--triumphRed)
+}
+
+.last-link {
+    font-weight: 800;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.last-link:hover {
+    color: var(--triumphRed)
+}
+
+.right-arrow {
+    font-size: 1.7rem;
+    color: var(--triumphRed)
+}
+
+.acc-image {
+    width: 20%;
+    height: 90%;
+    /* border: 1px solid rgb(246, 0, 0); */
+    overflow: hidden;
+}
+
+.acc-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cloth-container {
+    display: none;
+
+
+}
+
+#pc-cloth:hover .cloth-container {
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    background: #fff;
+    grid-template-columns: repeat(4, 2fr);
+    /* grid-template-rows: repeat(2,0.5fr); */
+    /* row-gap: 10px; */
+    padding: 10px;
+    z-index: 5;
+
+}
+
+.cloth-container .inner-clothes {
+    width: 95%;
+    /* height:90%; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+
+.cloth-image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+
+}
+
+.cloth-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 600ms ease-in;
+    object-position: center;
+}
+
+.inner-clothes:hover .cloth-image img {
+    transform: scale(1.2);
+    object-position: top;
+}
+
+.inner-clothes p {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+.inner-clothes h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5px 0px 2px 0px;
+}
+
+.inner-clothes:hover h3 {
+    color: rgb(166, 1, 1);
+}
+
+.owner-box {
+    display: none;
+    transition: all 400ms linear;
+    background: #fff;
+}
+
+#pc-owner:hover .owner-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+
+    animation: appear 200ms ease-in;
+    z-index: 5;
+
+}
+
+.owner-top {
+    width: 100%;
+    height: 90%;
+    border-bottom: 2px solid rgb(222, 222, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.owner-links {
+    width: 20%;
+    height: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.owner-links h3 {
+    color: black;
+    padding: 5px 0px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    font-size: 1rem;
+}
+
+.owner-links>a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.owner-links>a:hover {
+    color: var(--triumphRed);
+}
+
+.owner-pics {
+    width: 35%;
+    height: 90%;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.owner-pics>div {
+    width: 50%;
+    height: 100%;
+    border: 1px solid green;
+    overflow: hidden;
+}
+
+.owner-pics>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.owner-bottom {
+    width: 100%;
+    height: calc(90vh - 90%);
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.ob-links {
+    /* width:20%; */
+    height: 100%;
+    /* border:1px solid red; */
+    display: flex;
+    color: black;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#location-pin,
+#check-pin {
+    font-size: 2rem;
+}
+
+.ob-link {
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.ob-link:hover {
+    color: var(--triumphRed)
+}
+
+.discover-box {
+    display: none;
+}
+
+#pc-discover:hover .discover-box {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background: #fff;
+    animation: appear 200ms ease-in;
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    /* border: 2px solid red; */
+    align-items: center;
+    z-index: 5;
+    padding-left: 10px;
+}
+
+.discover-links {
+    width: 65%;
+    height: 90%;
+    /* border:1px solid black; */
+    display: flex;
+    gap: 10px;
+}
+
+.discover-links>div {
+    width: 25%;
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.discover-links h3 {
+    color: black;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    padding: 5px 0px;
+}
+
+.discover-images {
+    width: 35%;
+    height: 90%;
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.discover-image {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.discover-image>div {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    /* border:1px solid green; */
+}
+
+.discover-image>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.discover-link {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.discover-link:hover {
+    color: var(--triumphRed)
+}
+
+#tm {
+    font-size: 0.8rem;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.close-mobile-menu {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width:1200px) {
+    .pc-header-links {
+        display: none;
+    }
+
+    .pc-booking-links {
+        display: none;
+    }
+
+    .header {
+        height: 8vh;
+
+    }
+
+    .header-logo {
+        /* border: 1px solid white; */
+        width: 28%;
+    }
+
+    .header-logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mobile-menu {
+        display: flex;
+        width: 50px;
+        height: 50px;
+
+        position: absolute;
+        left: 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        z-index: 2;
+    }
+
+    .mobile-menu>div {
+        height: 2px;
+        background: #fff;
+        border-radius: 10px;
+    }
+
+    .mobile-menu>div:first-child {
+        width: 70%;
+
+
+    }
+
+    .mobile-menu>div:nth-child(2) {
+        width: 50%;
+
+
+    }
+
+    .mobile-menu>div:nth-child(3) {
+        width: 20%;
+
+
+    }
+
+    .mobile-menu:hover {
+        cursor: pointer;
+    }
+
+    .mobile-menu-hide {
+        display: none;
+    }
+
+    .close-mobile-menu {
+        display: grid;
+        place-items: center;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 15px;
+
+    }
+
+    .close-mobile-menu-hide {
+        display: none;
+    }
+
+    #mob-menu-close {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .mobile-menu:hover,
+    .close-mobile-menu:hover {
+        cursor: pointer;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top: 8vh;
+        left: 0px;
+        background-color: #000;
+        color: #fff;
+        z-index: 3;
+    }
+
+    .mobile-nav-hide {
+        display: none;
+    }
+
+    .inner-mob-nav {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        /* border: 1px solid white; */
+    }
+
+    .mob-menu-link1 {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        width: 100%;
+        padding: 20px 0px 10px 20px;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px solid rgb(36, 36, 36);
+    }
+
+    .mob-menu-link1:last-child {
+        border-bottom: none;
+    }
+
+    .mob-menu-link1:hover {
+        color: rgb(204, 204, 204);
+        cursor: pointer;
+    }
+
+    .bottom-mob-menu {
+        width: 100%;
+        height: 30%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+
+    }
+
+    .mob-menu-link2 {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 0.9rem;
+    }
+
+    .mob-up-arrow {
+        position: absolute;
+        color: #fff;
+        right: 10px;
+        top: 20px;
+        font-weight: 800;
+        font-size: 1.3rem;
+        transition: all 300ms linear;
+    }
+
+    .mob-up-arrow-rotate {
+
+        transform: rotate(180deg);
+
+    }
+
+
+    .mob-moto-links {
+        width: 100%;
+
+        background-color: white;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #000;
+        font-size: 1rem;
+        padding: 20px 0px 10px 20px;
+        text-transform: uppercase;
+
+    }
+
+    .mob-moto-links>p {
+        position: relative;
+
+    }
+
+    .mob-right-arrow {
+        position: absolute;
+        right: 10px;
+        font-size: 1.5rem;
+    }
+
+    .mob-moto-links-hide {
+        display: none;
+
+    }
+}

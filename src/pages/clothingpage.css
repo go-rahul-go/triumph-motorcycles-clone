@@ -1,0 +1,375 @@
+.clothing-page {
+    width: 100%;
+    height: 100vh;
+    /* padding-top: 8vh; */
+    overflow: hidden;
+}
+
+.cloth-image-slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* border: 1px solid red; */
+    display: flex;
+    overflow: hidden;
+}
+
+.cloth-card {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+
+    font-size: 4rem;
+    color: white;
+    overflow: hidden;
+}
+
+.cloth-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.cloth-card-top {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+
+    /* border: 2px solid red; */
+    z-index: 2;
+    animation: cloth-slide-in 500ms linear forwards;
+
+}
+
+.cloth-card-bottom {
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid orange; */
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 8vh;
+
+
+}
+.clothing-gear-txt{
+   
+  
+    /* border:2px solid yellow; */
+    position: absolute;
+    top:20%;
+    right:20px;
+    display: flex;
+    flex-direction: column;
+    padding:10px 20px;
+    width:400px;
+    gap:10px;
+}
+.clothing-gear-txt>h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.clothing-gear-txt>p{
+    font-weight: 200;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.gear-btns{
+    width:100%;
+    /* border:2px solid rgb(174, 255, 0); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+}
+.gear-btns>a{
+    text-decoration: none;
+    
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.gear-btns a:first-child{
+    background: #fff;
+    color:black;
+    padding:10px 20px;
+    /* border:1px solid red; */
+}
+.gear-btns a:last-child{
+    background: #000;
+    color:rgb(255, 255, 255);
+    padding:10px 20px;
+    /* border:1px solid red; */
+}
+.clothing-types {
+    width: 100%;
+    /* background:yellow; */
+    background: rgb(255, 255, 255);
+    padding: 20px 0px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+#c-intro {
+    width: 40%;
+    /* border: 1px solid black; */
+    display: grid;
+    place-items: center;
+    margin: auto;
+    padding: 50px 10px;
+    font-size: 0.85rem;
+}
+
+.inner-c-types {
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    padding: 0px 20px;
+    gap: 100px;
+
+}
+
+.inner-c-types-reverse {
+    flex-direction: row-reverse;
+}
+
+.c-type-image {
+    width: 50%;
+    height: 82vh;
+
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.c-type-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#cti-2,
+#cti-3 {
+    top: -30px;
+
+}
+
+.c-type-txt {
+    width: 30%;
+
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.c-type-txt>h2 {
+    text-transform: uppercase;
+}
+
+.c-type-txt>p {
+    font-size: 0.95rem;
+    color: grey;
+}
+
+.c-collection {
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background: #bb0000;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@keyframes cloth-slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width:800px) {
+    .clothing-page-hide {
+        display: none;
+    }
+
+    .clothing-page {
+        padding-top: 0vh;
+    }
+
+    .cloth-image-slider {
+        height: 50vh
+    }
+
+    .cloth-card img {
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .cloth-card-top {
+        height: 50vh;
+        
+    }
+
+    .cloth-card-bottom {
+        height: 50vh;
+    }
+
+    .inner-c-types {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+        gap:20px;
+    }
+
+    .c-type-image {
+        width: 90%;
+        height: 100%;
+    }
+
+    .c-type-image img {
+        object-position: top;
+    }
+
+    #cti-2,
+    #cti-3 {
+        top: 0px;
+
+    }
+
+    .c-type-txt {
+        width: 90%;
+    }
+    .c-type-txt>p{
+        font-size: 0.8rem;
+    }
+    #c-intro {
+        width: 90%;
+    }
+    .clothing-gear-txt{
+        width:100%;
+        height:10vh;
+        top:calc(82% - 10vh);
+        left:0;
+        justify-content: center;
+        align-items: flex-start;
+        padding:10px;
+        background-color: rgba(50, 49, 49, 0.473);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+    .clothing-gear-txt>h2{
+        font-size: 5vw;
+    }
+    .clothing-gear-txt>p{
+        display: none;
+    }
+    .gear-btns{
+        justify-content: flex-start;
+    }
+    .gear-btns a{
+        font-size: 0.8rem;
+    }
+    .gear-btns a:first-child{
+        background: #fff;
+        color:black;
+        padding:5px 10px;
+    }
+    .gear-btns a:last-child{
+        background: #000;
+        color:rgb(255, 255, 255);
+        padding:5px 10px;
+    }
+}
+
+@media (min-width:800px) and (max-width:1200px) {
+    .clothing-page-hide {
+        display: none;
+    }
+
+    .clothing-page {
+        padding-top: 0vh;
+    }
+
+    .cloth-image-slider {
+        height: 60vw
+    }
+
+    .cloth-card img {
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .cloth-card-top {
+        height: 60vw;
+    }
+
+    .cloth-card-bottom {
+        height: 60vw;
+    }
+
+    .inner-c-types {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0px;
+    }
+
+    .c-type-image {
+        width: 80%;
+
+        height: 60vw;
+    }
+
+    .c-type-image img {
+        object-position: top;
+    }
+
+    .c-type-txt {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    #cti-2,
+    #cti-3 {
+        top: 0px;
+
+    }
+
+    #c-intro {
+        width: 80%;
+    }
+    .clothing-gear-txt{
+        /* width:100%; */
+        /* height:10vh; */
+        top:15%;
+        right:10px;
+        justify-content: center;
+        align-items: flex-start;
+        padding:10px;
+        background-color: rgba(50, 49, 49, 0.473);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+   .clothing-gear-txt>h2{
+    font-size: 1.7rem;
+   }
+   .clothing-gear-txt>p{
+    font-size: 0.85rem;
+   }
+   .gear-btns a{
+    font-size: 0.87rem;
+}
+}

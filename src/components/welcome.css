@@ -1,0 +1,167 @@
+.welcome {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.welcome-hide{
+    display: none;
+}
+.enquiry {
+    width: 100%;
+    height: 15vh;
+    background: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-enquiry{
+    width:45%;
+    height:100%;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color:ghostwhite;
+    gap:12px;
+}
+.inner-enquiry:hover
+{
+    cursor: pointer;
+    color:rgb(214, 0, 0);
+}
+.ie-icon{
+    font-size: 2.4rem;
+}
+.inner-enquiry>p{
+    font-size: 1.3rem;
+}
+#v-dash{
+    width:3px;
+    height:85%;
+    background: rgb(146, 145, 145);
+}
+.welcome-greeting {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    /* border: 2px solid black; */
+    padding: 90px 0px;
+
+}
+
+.welcome-greeting>h2 {
+    font-size: 2.3rem;
+}
+
+.welcome-greeting>h2,
+.welcome-greeting>h3 {
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.welcome-greeting>h3 {
+    font-size: 1.25rem;
+}
+
+.welcome-links {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.inner-welcome-links {
+    width: calc(100% / 3.3);
+    height: 90vh;
+    /* border: 1px solid blue; */
+}
+
+.welcome-links-image {
+    width: 100%;
+    height: 65%;
+    background: red;
+    overflow: hidden;
+}
+
+.welcome-links-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 300ms linear;
+}
+
+.welcome-links-text {
+    width: 100%;
+    height: calc(90vh - 65%);
+
+   
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 0px;
+}
+
+.welcome-links-text>p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+}
+
+.inner-welcome-links:hover {
+    cursor: pointer;
+    color: rgb(188, 188, 188);
+}
+
+.inner-welcome-links:hover .welcome-links-explore a {
+    color: rgb(188, 188, 188);
+}
+
+.inner-welcome-links:hover .welcome-links-image img {
+    transform: scale(1.1);
+}
+
+.welcome-links-explore {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.welcome-links-explore a {
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-size: 1rem;
+}
+
+@media (max-width:1200px) {
+    .enquiry {
+        display: none;
+    }
+
+    .welcome-links {
+        flex-direction: column;
+
+    }
+
+    .inner-welcome-links {
+        width: 90%;
+    }
+
+    .inner-welcome-links {
+        height: 58vh;
+    }
+    .welcome-links-image{
+        height:60%;
+    }
+    .welcome-links-text {
+        height: calc(58vh - 60%)
+    }
+}

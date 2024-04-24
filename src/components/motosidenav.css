@@ -1,0 +1,270 @@
+.moto-side-nav {
+    display: none;
+}
+
+#moto-close {
+    display: none;
+}
+
+.mob-adv-menu {
+    display: none;
+}
+
+@media(max-width:1200px) {
+    .moto-side-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* min-height: 100vh; */
+        height:100%;
+        background: rgb(245, 245, 245);
+        position: fixed;
+        top: 8vh;
+        right: 0;
+        z-index: 3;
+        overflow: auto;
+        border-bottom: 1px solid rgb(33, 33, 33);
+    }
+
+    #moto-close {
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-size: 2rem;
+        color: rgb(222, 222, 222);
+        
+    }
+
+    .mob-moto-h1 {
+       
+        height: 60px;
+        text-align: center;
+        background: rgb(39, 39, 39);
+        color: #fff;
+        text-transform: uppercase;
+
+        display: grid;
+        place-items: center;
+       
+    }
+
+    .mob-moto-h1>h1 {
+        font-size: 1rem;
+    }
+    .mob-bike-links1{
+        /* border:1px solid rgb(254, 11, 11); */
+        padding:20px;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .mob-bike-links2{
+        width:100%;
+        /* height:70px; */
+        /* border:1px solid black; */
+        display: flex;
+        flex-direction: column;
+        padding:20px;
+        gap:10px;
+    }
+    .mob-bike-links2>a{
+        text-decoration: none;
+        color:black;
+        font-weight: 100;
+        font-size: 0.9rem;
+        text-transform: capitalize;
+    }
+    .mob-bike-links3{
+        width:100%;
+        /* height:40%; */
+        /* border:1px solid blue; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-start;
+        align-items:flex-start; */
+        padding:20px;
+        gap:20px;
+    }
+    .mob-bike-links3>div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:10px;
+        text-transform: capitalize;
+    }
+    .mbl3-icons
+    {
+        font-size: 1.6rem;
+    }
+    .rot-90{
+        transform: rotate(-90deg);
+    }
+    .mobile-bike-link {
+        width:fit-content;
+        /* border:1px solid blue; */
+        text-transform:uppercase;
+        font-weight: 600;
+        font-size: 1rem;
+        /* border-bottom: 1px solid black; */
+       
+    }
+
+    .mobile-bike-link:hover {
+        color: rgb(152, 3, 3);
+        cursor: pointer;
+    }
+    
+    .mob-adv-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        /* height:100%; */
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        background-color: #fff;
+        overflow-y: auto;
+        padding-bottom: 100px;
+
+    }
+
+    .mob-bikes-explore {
+        width: 100%;
+        height: 50px;
+        /* border: 1px solid rgb(2, 2, 2); */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px;
+        text-transform: uppercase;
+    }
+
+    .mob-bikes-explore>h2 {
+        font-size: 1.2rem;
+
+    }
+
+    .mob-bikes-explore>a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-weight: 700;
+       
+    }
+
+    .moto-bike-card {
+        width: 100%;
+        min-height: 80px;
+        /* border-bottom: 1px solid rgb(187, 187, 187); */
+        display: flex;
+        flex-direction: column;
+       
+       
+    }
+
+    .moto-bike-card-bg-change {
+        background-color: rgb(237, 237, 237);
+    }
+
+    .moto-bike-card-visible {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        /* background: papayawhip; */
+    }
+
+    .mob-bike-box {
+        width: 30%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .mob-bike-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .mob-bike-visible {
+        display: flex;
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+    .inner-mob-bike {
+        text-decoration: none;
+        width: 40%;
+        height: 80%;
+        background: rgb(158, 0, 0);
+        color: white;
+        display: grid;
+        place-items: center;
+        text-transform: uppercase;
+    }
+
+    .mob-custom {
+
+        background: rgb(158, 0, 0);
+        color: white;
+
+
+    }
+
+    .mob-bike-details {
+
+        background: rgb(29, 29, 29);
+        color: white;
+    }
+
+    .mob-bike-hide {
+        display: none;
+    }
+
+    .mob-bike-info {
+        width: 50%;
+        height: 100%;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mob-bike-info>h3 {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+
+    .mob-bike-info>p {
+        font-size: 0.75rem;
+        text-transform: capitalize;
+    }
+
+    .mob-collapse-icon {
+        /* background-color: yellow; */
+        width: 20%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .collapse-icon {
+        font-size: 1.5rem;
+        color: rgb(54, 54, 54);
+        transition: all 400ms linear;
+    }
+
+    .collapse-icon-rotate {
+        transform: rotate(180deg);
+    }
+}

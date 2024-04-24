@@ -1,0 +1,42 @@
+.mob-discover{
+    display:none;
+}
+
+@media (max-width:1200px)
+{
+    .mob-discover{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        /* min-height:100vh; */
+        height:100%;
+        position: fixed;
+        top:8vh;
+        left:0;
+        background: rgb(245, 245, 244);
+        z-index:4;
+        overflow-y: auto;
+        padding-bottom: 50px;
+    }
+    .mob-discover-others{
+        width:100%;
+        /* border:1px solid green; */
+        padding:50px 30px;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .mob-discover-others>a{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        color:black;
+        font-size: 0.9rem;
+        text-transform: capitalize;
+        gap:8px;
+    }
+    .mob-discover-icon{
+        font-size: 1.4rem;
+    }
+}
